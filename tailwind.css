@@ -1,0 +1,30 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --background: rgba(246, 250, 253, 1);
+  --black: rgba(20, 20, 43, 1);
+  --body: rgba(78, 75, 102, 1);
+  --card-background: rgba(248, 248, 248, 1);
+  --drop-shadow-botton-left: -3px -3px 6px 0px rgba(20, 20, 43, 0.1);
+  --drop-shadow-button-right: 3px 3px 6px 0px rgba(20, 20, 43, 0.1);
+  --input-background: rgba(239, 240, 246, 1);
+  --label: rgba(110, 113, 145, 1);
+  --line: rgba(214, 216, 231, 1);
+  --off-white: rgba(252, 252, 252, 1);
+  --place-holder: rgba(160, 163, 189, 1);
+  --primary: rgba(59, 140, 215, 1);
+  --red: rgba(223, 56, 64, 1);
+  --secondary: rgba(38, 97, 168, 1);
+  --tertiary-1: rgba(192, 164, 41, 1);
+  --tertiary-2: rgba(154, 128, 10, 1);
+  --tertiary-3: rgba(172, 145, 25, 1);
+  --tertiary-blue: rgba(44, 111, 183, 1);
+  --white: rgba(255, 255, 255, 1);
+}

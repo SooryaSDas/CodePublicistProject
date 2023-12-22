@@ -1,10 +1,15 @@
 import './App.css';
-import Buy from './Components/Buy';
+import BodyContents from './Components/Buy/BodyContents';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+
 
 function App() {
   return (
     <div className="App">
-      <Buy/>
+      <Header/>
+      <BodyContents/>
+      <Footer/>
     </div>
   );
 }
