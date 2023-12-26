@@ -4,7 +4,7 @@ import { Forward } from '../../icons/Forward'
 const OverView = () => {
   return (
     <div>
-        <div className='className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-0 left-[155px]"'>
+        <div className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-0">
             <div className='absolute w-full top-[250px] left-32 '>
                     <div className="flex gap-[24px] self-stretch w-full items-start relative flex-[0_0_auto]">
                     <div className="inline-flex flex-col items-start gap-[24px] relative flex-[0_0_auto]">
@@ -143,7 +143,7 @@ const OverView = () => {
                             </div>
                             </div>
                             <div className="relative self-stretch w-full h-[240px] rounded-[8px] bg-cover bg-[50%_50%]" >
-                                <img src="./img/frame-48095521.png" alt="" />
+                                <img src="./img/map.png" alt="" />
                             </div>
                         </div>
                         </div>
@@ -204,7 +204,7 @@ const OverView = () => {
                             </div>
                         </div>
                         </div>
-                        <div className="flex flex-col w-[700px] items-start gap-[10px] relative flex-[0_0_auto] bg-card-background rounded-[10px] overflow-hidden">
+                        <div className="flex flex-col w-[700px] items-start gap-[10px] relative flex-[0_0_auto] bg-gray-100 rounded-[10px] overflow-hidden">
                         <div className="flex flex-col items-start gap-[16px] px-[16px] py-[24px] relative self-stretch w-full flex-[0_0_auto]">
                             <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[20px] tracking-[0] leading-[24px] whitespace-nowrap">
                             Floor plans
@@ -352,7 +352,7 @@ const OverView = () => {
                     </div>
                     <div className="flex flex-col items-start gap-[24px] p-[24px] relative flex-1 grow bg-white rounded-[8px] border border-solid border-line">
                         <div className="flex flex-col items-start justify-center gap-[8px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-background rounded-[8px]">
-                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Bold',Helvetica] font-bold text-primary text-[24px] tracking-[0] leading-[28px] whitespace-nowrap">
+                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Bold',Helvetica] font-bold text-blue-700 text-[24px] tracking-[0] leading-[28px] whitespace-nowrap">
                             Boney Mathew
                         </div>
                         <div className="inline-flex flex-col justify-center gap-[8px] items-start relative flex-[0_0_auto]">

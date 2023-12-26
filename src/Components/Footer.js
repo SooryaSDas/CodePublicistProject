@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
         <div className="absolute w-[1440px] h-[436px] top-[3432px] left-0 bg-background">
-            <div className="absolute w-[1170px] top-[144px] left-[135px] h-px bg-line" />
+            <div className="absolute w-[1170px] left-[135px] h-px bg-line" />
             <div className="flex w-[1170px] items-end justify-between absolute top-[60px] left-[135px]">
               <img className="relative w-[79.87px] h-[60px] object-cover" alt="Dv homes" src="./img/dv-homes.png" />
               <div className="inline-flex items-center gap-[16px] relative flex-[0_0_auto]">

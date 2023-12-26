@@ -3,7 +3,7 @@ import { Bookmark1 } from '../../icons/BookMark';
 const BasicDetails = () => {
   return (
     <div>
-        <div className="flex flex-col w-[1170px] items-start justify-center gap-[24px] px-0 py-[24px] top-[96px] bg-[#ffffff] border-b [border-bottom-style:solid] border-line ml-24">
+        <div className="flex flex-col w-[1170px] items-start justify-center gap-[24px] px-0 py-[24px] bg-[#ffffff] border-b [border-bottom-style:solid] border-line ml-24">
           <div className="flex items-center gap-[24px] relative self-stretch w-full flex-[0_0_auto]">
             <div className="flex flex-col items-start justify-center gap-[12px] relative flex-1 grow">
               <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Bold',Helvetica] font-bold text-black text-[26px] tracking-[0] leading-[38px] whitespace-nowrap">
