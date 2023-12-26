@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Forward } from '../../icons/Forward'
 
 const OverView = () => {
+    const [show, setShow] = useState(false);
   return (
     <div>
-        <div className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-0">
+        <div className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-7">
             <div className='absolute w-full top-[850px] left-32 '>
                     <div className="flex gap-[24px] self-stretch w-full items-start relative flex-[0_0_auto]">
                     <div className="inline-flex flex-col items-start gap-[24px] relative flex-[0_0_auto]">
@@ -21,9 +22,18 @@ const OverView = () => {
                                 the college, really fast commute over to Hwy 18 and SR 167, plenty of shopping and restaurants
                                 close by or for delivery and just a couple minutes walk to the river, low key
                             </p>
-                            <div className="relative self-stretch [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[24px] underline">
-                                Show more
+                            <div onClick={()=>setShow(!show)} className=" hover:cursor-pointer relative self-stretch [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[24px] underline">
+                               {show ? "Show Less" : "Show More"}
                             </div>
+                           { show && <div>
+                                <p className="relative self-stretch mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px]">
+                                    Come live in this terrific low turnover, single story apartment that is just perfect for 1 or
+                                    two. One bedroom, living room, full bath, kitchen and a private free laundry facility on-site
+                                    for units without washer &amp; dryer. This brick sided home is just 5 minutes from Lea Hill and
+                                    the college, really fast commute over to Hwy 18 and SR 167, plenty of shopping and restaurants
+                                    close by or for delivery and just a couple minutes walk to the river, low key
+                                </p>
+                            </div>}
                             </div>
                         </div>
                         </div>
@@ -142,9 +152,7 @@ const OverView = () => {
                                 Washington
                             </div>
                             </div>
-                            <div className="relative self-stretch w-full h-[240px] rounded-[8px] bg-cover bg-[50%_50%]" >
-                                <img src="./img/map.png" alt="" />
-                            </div>
+                            <div className="relative self-stretch w-full h-[240px] rounded-[8px] bg-cover bg-[50%_50%]" style={{ backgroundImage: "url('/img/map.png')" }}/>
                         </div>
                         </div>
                         <div className="flex flex-col w-[700px] items-start gap-[10px] relative flex-[0_0_auto] bg-gray-100 rounded-[10px] overflow-hidden">
@@ -210,142 +218,150 @@ const OverView = () => {
                             Floor plans
                             </div>
                             <div className="flex flex-col items-start gap-[24px] relative self-stretch w-full flex-[0_0_auto]">
-                            <div className="flex flex-col gap-[16px] self-stretch w-full items-start relative flex-[0_0_auto]">
-                                <div className="flex flex-col gap-[10px] self-stretch w-full items-start relative flex-[0_0_auto]">
-                                <div className="flex items-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
-                                    <div className="flex-1 [font-family:'Dessau-Medium',Helvetica] font-medium text-[24px] leading-[26px] relative mt-[-1.00px] text-black tracking-[0]">
-                                    First floor
+                                {/* 1st floor start */}
+                                <div className="flex flex-col gap-[16px] self-stretch w-full items-start relative flex-[0_0_auto]">
+                                    <div className="flex flex-col gap-[10px] self-stretch w-full items-start relative flex-[0_0_auto]">
+                                    <div className="flex items-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
+                                        <div className="flex-1 [font-family:'Dessau-Medium',Helvetica] font-medium text-[24px] leading-[26px] relative mt-[-1.00px] text-black tracking-[0]">
+                                        First floor
+                                        </div>
+                                        <Forward className="!relative !w-[18px] !h-[18px]" />
                                     </div>
-                                    <Forward className="!relative !w-[18px] !h-[18px]" />
+                                    <div className="inline-flex items-start gap-[24px] relative flex-[0_0_auto]">
+                                        <div className="inline-flex flex-col items-start gap-[8px] relative flex-[0_0_auto]">
+                                        <div className="inline-flex items-start gap-[4px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Rooms:
+                                            </div>
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            4
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="inline-flex flex-[0_0_auto] flex-col items-start gap-[4px] relative">
+                                        <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Baths:
+                                            </div>
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            2
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="inline-flex flex-[0_0_auto] flex-col items-start gap-[4px] relative">
+                                        <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Size:
+                                            </div>
+                                            <div className="w-fit mt-[-1.00px] text-body text-[16px] leading-[20px] whitespace-nowrap relative [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0]">
+                                            150 SqFt
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div className="relative self-stretch w-full h-px bg-line" />
                                 </div>
-                                <div className="inline-flex items-start gap-[24px] relative flex-[0_0_auto]">
-                                    <div className="inline-flex flex-col items-start gap-[8px] relative flex-[0_0_auto]">
-                                    <div className="inline-flex items-start gap-[4px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Rooms:
-                                        </div>
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        4
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="inline-flex flex-[0_0_auto] flex-col items-start gap-[4px] relative">
-                                    <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Baths:
-                                        </div>
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        2
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="inline-flex flex-[0_0_auto] flex-col items-start gap-[4px] relative">
-                                    <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Size:
-                                        </div>
-                                        <div className="w-fit mt-[-1.00px] text-body text-[16px] leading-[20px] whitespace-nowrap relative [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0]">
-                                        150 SqFt
-                                        </div>
-                                    </div>
-                                    </div>
+                                {/* 1st floor ends */}
+                                {/* //image start */}
+                                <div className="relative self-stretch w-full h-[300px] bg-[#ffffff] rounded-[8px] overflow-hidden">
+                                    <img
+                                    className="absolute w-[413px] h-[300px] top-0 left-[127px] object-cover"
+                                    alt="Floor"
+                                    src="/img/floor1-1.png"
+                                    />
                                 </div>
+                                {/* image ends */}
+
+                                {/* 2nd floor */}
+                                <div className="flex flex-col gap-[16px] self-stretch w-full items-start relative flex-[0_0_auto]">
+                                    <div className="flex flex-col gap-[6px] self-stretch w-full items-start relative flex-[0_0_auto]">
+                                    <div className="flex items-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
+                                        <div className="flex-1 [font-family:'Dessau-Medium',Helvetica] font-medium text-[24px] leading-[26px] relative mt-[-1.00px] text-black tracking-[0]">
+                                        Second floor
+                                        </div>
+                                        <Forward className="!relative !w-[18px] !h-[18px]" />
+                                    </div>
+                                    <div className="inline-flex items-start gap-[10px] relative flex-[0_0_auto]">
+                                        <div className="flex flex-col w-[216px] items-start gap-[8px] relative">
+                                        <div className="inline-flex items-start gap-[4px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Rooms:
+                                            </div>
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            4
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
+                                        <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Baths:
+                                            </div>
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            2
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
+                                        <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Size:
+                                            </div>
+                                            <div className="w-fit mt-[-1.00px] text-body text-[16px] leading-[20px] whitespace-nowrap relative [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0]">
+                                            150 SqFt
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div className="relative self-stretch w-full h-px bg-line" />
                                 </div>
-                                <div className="relative self-stretch w-full h-px bg-line" />
-                            </div>
-                            <div className="relative self-stretch w-full h-[300px] bg-[#ffffff] rounded-[8px] overflow-hidden">
-                                <img
-                                className="absolute w-[413px] h-[300px] top-0 left-[127px] object-cover"
-                                alt="Floor"
-                                src="/img/floor1-1.png"
-                                />
-                            </div>
-                            <div className="flex flex-col gap-[16px] self-stretch w-full items-start relative flex-[0_0_auto]">
-                                <div className="flex flex-col gap-[6px] self-stretch w-full items-start relative flex-[0_0_auto]">
-                                <div className="flex items-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
-                                    <div className="flex-1 [font-family:'Dessau-Medium',Helvetica] font-medium text-[24px] leading-[26px] relative mt-[-1.00px] text-black tracking-[0]">
-                                    Second floor
+                                {/* 3rd floor */}
+                                <div className="flex flex-col gap-[16px] self-stretch w-full items-start relative flex-[0_0_auto]">
+                                    <div className="flex flex-col gap-[6px] self-stretch w-full items-start relative flex-[0_0_auto]">
+                                    <div className="flex items-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
+                                        <div className="flex-1 [font-family:'Dessau-Medium',Helvetica] font-medium text-[24px] leading-[26px] relative mt-[-1.00px] text-black tracking-[0]">
+                                        Third floor
+                                        </div>
+                                        <Forward className="!relative !w-[18px] !h-[18px]" />
                                     </div>
-                                    <Forward className="!relative !w-[18px] !h-[18px]" />
+                                    <div className="inline-flex items-start gap-[10px] relative flex-[0_0_auto]">
+                                        <div className="flex flex-col w-[216px] items-start gap-[8px] relative">
+                                        <div className="inline-flex items-start gap-[4px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Rooms:
+                                            </div>
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            4
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
+                                        <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Baths:
+                                            </div>
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            2
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
+                                        <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
+                                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
+                                            Size:
+                                            </div>
+                                            <div className="w-fit mt-[-1.00px] text-body text-[16px] leading-[20px] whitespace-nowrap relative [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0]">
+                                            150 SqFt
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div className="relative self-stretch w-full h-px bg-line" />
                                 </div>
-                                <div className="inline-flex items-start gap-[10px] relative flex-[0_0_auto]">
-                                    <div className="flex flex-col w-[216px] items-start gap-[8px] relative">
-                                    <div className="inline-flex items-start gap-[4px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Rooms:
-                                        </div>
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        4
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
-                                    <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Baths:
-                                        </div>
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        2
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
-                                    <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Size:
-                                        </div>
-                                        <div className="w-fit mt-[-1.00px] text-body text-[16px] leading-[20px] whitespace-nowrap relative [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0]">
-                                        150 SqFt
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="relative self-stretch w-full h-px bg-line" />
-                            </div>
-                            <div className="flex flex-col gap-[16px] self-stretch w-full items-start relative flex-[0_0_auto]">
-                                <div className="flex flex-col gap-[6px] self-stretch w-full items-start relative flex-[0_0_auto]">
-                                <div className="flex items-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
-                                    <div className="flex-1 [font-family:'Dessau-Medium',Helvetica] font-medium text-[24px] leading-[26px] relative mt-[-1.00px] text-black tracking-[0]">
-                                    Third floor
-                                    </div>
-                                    <Forward className="!relative !w-[18px] !h-[18px]" />
-                                </div>
-                                <div className="inline-flex items-start gap-[10px] relative flex-[0_0_auto]">
-                                    <div className="flex flex-col w-[216px] items-start gap-[8px] relative">
-                                    <div className="inline-flex items-start gap-[4px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Rooms:
-                                        </div>
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        4
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
-                                    <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Baths:
-                                        </div>
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-body text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        2
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="flex w-[216px] flex-col items-start gap-[4px] relative">
-                                    <div className="inline-flex items-start gap-[8px] relative flex-[0_0_auto]">
-                                        <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-DemiBold',Helvetica] font-bold text-black text-[16px] tracking-[0] leading-[20px] whitespace-nowrap">
-                                        Size:
-                                        </div>
-                                        <div className="w-fit mt-[-1.00px] text-body text-[16px] leading-[20px] whitespace-nowrap relative [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0]">
-                                        150 SqFt
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div className="relative self-stretch w-full h-px bg-line" />
-                            </div>
+                                {/* 3rd floor ends */}
                             </div>
                         </div>
                         </div>
