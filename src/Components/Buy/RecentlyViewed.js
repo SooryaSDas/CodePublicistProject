@@ -5,7 +5,7 @@ const RecentlyViewed = () => {
     <div>
         {/* recently viewed listing started*/}
         <div className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-0">
-            <div className='absolute w-full top-[1950px] left-32'>
+            <div className='absolute w-full top-[2550px] left-32'>
               <div className="flex flex-col gap-[60px] self-stretch w-full items-start relative flex-[0_0_auto]">
                 <div className="flex items-start gap-[40px] relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex flex-col justify-center gap-[16px] items-start relative flex-[0_0_auto]">
@@ -160,7 +160,7 @@ const RecentlyViewed = () => {
          {/* recently viewed listing ended*/}
          {/* similar listing started */}
          <div className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-0">
-            <div className='absolute w-full top-[2550px] left-32'>
+            <div className='absolute w-full top-[3150px] left-32'>
               <div className="flex flex-col gap-[60px] self-stretch w-full items-start relative flex-[0_0_auto]">
                 <div className="flex items-start gap-[40px] relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex flex-col justify-center gap-[16px] items-start relative flex-[0_0_auto]">

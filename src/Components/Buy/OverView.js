@@ -5,7 +5,7 @@ const OverView = () => {
   return (
     <div>
         <div className="inline-flex flex-col items-start gap-[24px] pt-0 px-0 absolute top-0">
-            <div className='absolute w-full top-[250px] left-32 '>
+            <div className='absolute w-full top-[850px] left-32 '>
                     <div className="flex gap-[24px] self-stretch w-full items-start relative flex-[0_0_auto]">
                     <div className="inline-flex flex-col items-start gap-[24px] relative flex-[0_0_auto]">
                         <div className="flex flex-col w-[700px] items-start gap-[10px] relative flex-[0_0_auto] bg-gray-100 rounded-lg overflow-hidden">
@@ -351,7 +351,7 @@ const OverView = () => {
                         </div>
                     </div>
                     <div className="flex flex-col items-start gap-[24px] p-[24px] relative flex-1 grow bg-white rounded-[8px] border border-solid border-line">
-                        <div className="flex flex-col items-start justify-center gap-[8px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-background rounded-[8px]">
+                        <div className="flex flex-col items-start justify-center gap-[8px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-blue-50 rounded-[8px]">
                         <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Bold',Helvetica] font-bold text-blue-700 text-[24px] tracking-[0] leading-[28px] whitespace-nowrap">
                             Boney Mathew
                         </div>
@@ -386,8 +386,8 @@ const OverView = () => {
                             <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-black text-[18px] tracking-[0] leading-[22px] whitespace-nowrap">
                             First name
                             </div>
-                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-input-background rounded-[8px] overflow-hidden">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-label text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
+                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-gray-100 rounded-[8px] overflow-hidden">
+                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-gray-400 text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
                                 Enter your first name
                             </div>
                             </div>
@@ -396,8 +396,8 @@ const OverView = () => {
                             <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-black text-[18px] tracking-[0] leading-[22px] whitespace-nowrap">
                             Last name
                             </div>
-                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-input-background rounded-[8px] overflow-hidden">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-label text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
+                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-gray-100 rounded-[8px] overflow-hidden">
+                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-gray-400 text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
                                 Enter your last name
                             </div>
                             </div>
@@ -406,8 +406,8 @@ const OverView = () => {
                             <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-black text-[18px] tracking-[0] leading-[22px] whitespace-nowrap">
                             Email
                             </div>
-                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-input-background rounded-[8px] overflow-hidden">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-label text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
+                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-gray-100 rounded-[8px] overflow-hidden">
+                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-gray-400 text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
                                 Enter your email address
                             </div>
                             </div>
@@ -416,8 +416,8 @@ const OverView = () => {
                             <div className="text-black text-[18px] leading-[22px] relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium tracking-[0] whitespace-nowrap">
                             Phone number
                             </div>
-                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-input-background rounded-[8px] overflow-hidden">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-label text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
+                            <div className="flex flex-col items-start justify-center gap-[10px] p-[16px] relative self-stretch w-full flex-[0_0_auto] bg-gray-100 rounded-[8px] overflow-hidden">
+                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-gray-400 text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
                                 Enter your phone number
                             </div>
                             </div>
@@ -426,18 +426,18 @@ const OverView = () => {
                             <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-black text-[18px] tracking-[0] leading-[22px] whitespace-nowrap">
                             Message
                             </div>
-                            <div className="flex flex-col h-[100px] items-start gap-[10px] p-[16px] relative self-stretch w-full bg-input-background rounded-[8px] overflow-hidden">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-label text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
+                            <div className="flex flex-col h-[100px] items-start gap-[10px] p-[16px] relative self-stretch w-full bg-gray-100 rounded-[8px] overflow-hidden">
+                            <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-gray-400 text-[20px] tracking-[0] leading-[22px] whitespace-nowrap">
                                 Message
                             </div>
                             </div>
                         </div>
                         </div>
                         <div className="flex flex-col items-start justify-center gap-[10px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="inline-flex items-center justify-center gap-[10px] px-[24px] py-[14px] relative flex-[0_0_auto] bg-primary rounded-[45px]">
+                        <div className="inline-flex items-center justify-center gap-[10px] px-[24px] py-[14px] relative flex-[0_0_auto] bg-blue-400 rounded-[45px]">
                             <div className="items-center self-stretch inline-flex gap-[6px] relative flex-[0_0_auto]">
                             <div className="inline-flex items-center gap-[10px] pt-0 pb-[4px] px-0 relative flex-[0_0_auto]">
-                                <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-off-white text-[18px] tracking-[0] leading-[24px] whitespace-nowrap">
+                                <div className="relative w-fit mt-[-1.00px] [font-family:'Dessau-Medium',Helvetica] font-medium text-yellow-50 text-[18px] tracking-[0] leading-[24px] whitespace-nowrap">
                                 Send Request
                                 </div>
                             </div>
